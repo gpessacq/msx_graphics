@@ -20,7 +20,9 @@ canvas_context is the canvas context.
 ##### Example
 
 var canvas = document.querySelector("#myCanvas");
+
 var ctx = canvas.getContext("2d");
+
 msxGraphics.screen(ctx); 
 
 ### pset
