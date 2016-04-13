@@ -19,8 +19,13 @@ var msxGraphics = (function(){
 		context.lineTo(x2, y2);
 		context.strokeStyle = color;
 		context.stroke();
+    },
+    circle : function(x1, y1, radius, color){
+		context.beginPath();
+		context.strokeStyle = color;
+		context.arc(x1, y1, radius, 0, 2*Math.PI);
+		context.stroke();
     }
-
   }
 
 })(); 
