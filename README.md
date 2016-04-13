@@ -5,8 +5,12 @@ A Javascript library to draw in the canvas using [MSX](https://en.wikipedia.org/
 ##Methods
 
 ### screen
+Passes the canvas 2d context to msxGraphics.
 
+
+```
 msxGraphics.screen(canvas_context);
+```
 
 ##### Where
 
@@ -22,7 +26,9 @@ var ctx = canvas.getContext("2d");
 ### pset
 Draws a single pixel.
 
+```
 pset(x1, y1, color);
+```
 
 ##### Where
 
@@ -39,7 +45,9 @@ msxGraphics.pset(150, 55, "#afeeff");
 ### line
 Draws a line or a box.
 
+```
 msxGraphics.line(x1, y1, x2, y2, color, box_full);
+```
 
 ##### Where
 
@@ -62,7 +70,9 @@ msxGraphics.line(300, 400, 350, 500, "#996633", 1);
 ### circle
 Draws a circle.
 
+```
 msxGraphics.circle(x1, y1, radius, color); 
+```
 
 ##### Where
 
