@@ -1,12 +1,11 @@
 var msxGraphics = (function(){
 
-  var context = null;
-  var color = null;
+  var context, color, x1, x2, y1, y2, boxFull = null;
 
   return {
   	
-    init : function(ctx){
-      context = ctx;
+    screen : function(canvas_context){
+      context = canvas_context;
     },
     
     pset : function(x1, y1, color){
@@ -14,8 +13,8 @@ var msxGraphics = (function(){
        	context.fillRect(x1,y1,1,1);
   	},
   	
-    line : function(x1, y1, x2, y2, color, box_full){
-    	if (box_full){
+    line : function(x1, y1, x2, y2, color, boxFull){
+    	if (boxFull){
     		var x3, y3;
     		x3 = x2 - x1;
     		y3 = y2 - y1;
